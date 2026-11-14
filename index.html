@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#260d26">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>For Isha ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--ink:#fff5f5;--muted:#e8cbd9;--pink:#ff8fb7;--rose:#ffbfd2;--gold:#f8d9a0;--night:#180b20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#552044 0%,#28102d 42%,#120a1b 100%);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:43px 43px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+button{font:inherit;cursor:pointer}.shell{width:min(100% - 36px,900px);margin:auto}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;padding:80px 0 55px}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--gold);font-weight:700}.hero h1{font:600 clamp(4rem,16vw,9rem)/.95 'Playfair Display',serif;margin:18px 0 14px;background:linear-gradient(120deg,#fff7ed,#ff9dbf 55%,#f9d9a2);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 12px 55px #ff8fb733}
+.hero .sub{font:italic clamp(1.15rem,3vw,1.6rem) 'Playfair Display',serif;color:#f8dce7;margin:0 auto 28px}
+.hero-heart{font-size:2.2rem;display:inline-block;animation:heartbeat 1.4s infinite;filter:drop-shadow(0 0 18px #ff6d9d)}
+@keyframes heartbeat{50%{transform:scale(1.22)}}.btn{border:1px solid #ffc1d6aa;border-radius:999px;padding:14px 24px;color:#35152b;background:linear-gradient(120deg,#ffe0e9,#ff9fbe);font-weight:700;box-shadow:0 10px 35px #ff75a433;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:0 15px 42px #ff75a355}.btn.ghost{background:#ffffff0c;color:#fff1f6;border-color:#ffffff44;box-shadow:none}
+.scrollhint{position:absolute;bottom:22px;color:#eacbd9;font-size:.75rem;letter-spacing:.14em;opacity:.75}
+.petal{position:fixed;top:-30px;z-index:0;pointer-events:none;animation:fall linear forwards;opacity:.8}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(680deg);opacity:0}}
+main{position:relative;z-index:1;padding-bottom:90px}.intro{text-align:center;padding:35px 0 24px}.intro h2,.stage h2{font:600 clamp(2rem,6vw,3.2rem) 'Playfair Display',serif;margin:10px 0}.intro p,.stage p{color:var(--muted);line-height:1.8}.stage{display:none;text-align:center;margin:30px auto;padding:clamp(24px,5vw,44px);border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(145deg,#ffffff12,#ffffff06);box-shadow:0 25px 80px #0003;backdrop-filter:blur(12px);animation:rise .65s both}.stage.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.stage-number{font-size:.72rem;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}.letter{max-width:620px;margin:24px auto;padding:26px;border-radius:18px;background:#fff3e9;color:#5a3045;text-align:left;box-shadow:0 14px 40px #0003;font:italic 1.15rem/1.9 'Playfair Display',serif}.letter strong{font-style:normal}.memory-grid,.gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}.memory{min-height:160px;border-radius:15px;background:linear-gradient(145deg,#ffe1eb,#f6b6cd);color:#69334d;display:grid;place-items:center;padding:14px;transform:rotate(var(--rot));box-shadow:0 10px 28px #0003;font-family:'Playfair Display',serif}.memory span{font-size:2rem}.memory small{font:600 .75rem 'DM Sans',sans-serif;opacity:.8}.gift{min-height:150px;border:1px solid #ffffff30;border-radius:18px;background:#ffffff0b;color:white;padding:18px;transition:.3s}.gift:hover{transform:translateY(-5px);background:#ffffff18}.gift .emoji{display:block;font-size:2.8rem;margin-bottom:8px}.gift .reveal{display:none;color:#ffd7e5;line-height:1.5;font-family:'Playfair Display',serif;font-style:italic}.gift.open .emoji{display:none}.gift.open .reveal{display:block}.cake{font-size:5rem;filter:drop-shadow(0 0 28px #ff8fb788);animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-12px)}}.final-note{font:italic clamp(1.5rem,4vw,2.3rem)/1.5 'Playfair Display',serif;color:#ffe0eb;max-width:680px;margin:24px auto}.progress{height:4px;background:#ffffff1c;border-radius:8px;overflow:hidden;margin:24px auto 0;max-width:350px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff8fb7,#f8d9a0);transition:width .5s}.footer{text-align:center;color:#cdaabd;font-size:.8rem;margin-top:45px}.confetti{position:fixed;z-index:10;top:-15px;width:9px;height:14px;pointer-events:none;animation:confetti 3.2s linear forwards}@keyframes confetti{to{transform:translateY(110vh) rotate(900deg);opacity:0}}
+@media(max-width:600px){.memory-grid,.gift-grid{grid-template-columns:1fr}.memory{min-height:115px}.stage{padding:24px 18px}.hero{min-height:92svh}}
+/* Mobile + Safari refinements */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top)}
+body{min-width:0;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+body:before{-webkit-mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+.stage{-webkit-backdrop-filter:blur(12px);overflow-wrap:anywhere}
+.hero{min-height:100vh;min-height:100svh}
+.btn,.gift{-webkit-appearance:none;appearance:none;touch-action:manipulation}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media(max-width:700px){
+  .shell{width:min(100% - 28px,900px)}
+  .hero{padding:calc(56px + env(safe-area-inset-top)) 0 64px}
+  .hero h1{font-size:clamp(3.6rem,19vw,7rem);overflow-wrap:anywhere}
+  .hero .sub{max-width:22rem;line-height:1.45}
+  .intro{padding-top:24px}
+  .intro p,.stage p{font-size:.96rem}
+  .stage{margin:20px auto;padding:24px 16px;border-radius:22px}
+  .letter{padding:20px 17px;font-size:1.04rem;line-height:1.75}
+  .memory-grid,.gift-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .memory{min-height:125px;padding:10px;transform:none}
+  .gift{min-width:0;min-height:145px;padding:14px 10px}
+  .gift .reveal{font-size:.98rem}
+  .btn{max-width:100%;white-space:normal;padding:13px 19px;line-height:1.35}
+  .scrollhint{bottom:calc(16px + env(safe-area-inset-bottom));font-size:.65rem}
+}
+@media(max-width:380px){
+  .shell{width:calc(100% - 22px)}
+  .memory-grid,.gift-grid{grid-template-columns:1fr}
+  .memory{min-height:105px}
+  .stage{padding:22px 13px}
+  .eyebrow{font-size:.64rem;letter-spacing:.2em}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+</style>
+</head>
+<body>
+<div class="hero">
+ <div class="shell">
+  <div class="hero-heart">♡</div>
+  <div class="eyebrow">A little something made with love</div>
+  <h1>ISHA</h1>
+  <p class="sub">Today, the universe celebrates you.</p>
+  <button class="btn" onclick="begin()">Open your birthday surprise&nbsp; ✨</button>
+ </div>
+ <div class="scrollhint">MADE JUST FOR YOU · WITH LOVE</div>
+</div>
+<main class="shell" id="experience">
+ <div class="intro"><div class="eyebrow">Your day · Your magic</div><h2>Happy Birthday, beautiful</h2><p>There are a few little surprises waiting for you. Take your time and unlock them one by one. 💗</p><div class="progress"><span id="progress"></span></div></div>
+ <section class="stage active" id="s1">
+  <div class="stage-number">Surprise 01 · A note for you</div><h2>First, a little letter…</h2>
+  <p>Some people make ordinary days feel special. This is for one of those people.</p>
+  <div class="letter">Dear Isha,<br><br>On your birthday, I just want you to know how genuinely special you are. I hope this new year brings you the kind of happiness that stays, the kind of laughter that makes your cheeks hurt, and countless reasons to smile.<br><br>Keep being your wonderful self. The world is brighter with you in it. <strong>Happy Birthday! ♡</strong><br><br>With lots of love, <strong>Your favourite person</strong></div>
+  <button class="btn" onclick="next(2)">There's more for you →</button>
+ </section>
+ <section class="stage" id="s2">
+  <div class="stage-number">Surprise 02 · Little reminders</div><h2>Reasons you're wonderful</h2>
+  <p>Three tiny reminders, in case you ever forget.</p>
+  <div class="memory-grid">
+   <div class="memory" style="--rot:-3deg"><div><span>☀️</span><br><b>Your smile</b><br><small>Instant sunshine</small></div></div>
+   <div class="memory" style="--rot:2deg"><div><span>✨</span><br><b>Your magic</b><br><small>One of a kind</small></div></div>
+   <div class="memory" style="--rot:-1deg"><div><span>💗</span><br><b>Your heart</b><br><small>So very precious</small></div></div>
+  </div>
+  <button class="btn" onclick="next(3)">Unlock the mystery gifts →</button>
+ </section>
+ <section class="stage" id="s3">
+  <div class="stage-number">Surprise 03 · Pick your presents</div><h2>Choose all three gifts 🎁</h2>
+  <p>Tap each gift to unwrap it. Every one has a little wish inside.</p>
+  <div class="gift-grid">
+   <button class="gift" onclick="unwrap(this)"><span class="emoji">🎁</span><span class="reveal">A year full of unexpected joy, beautiful beginnings and dreams coming true. ✨</span></button>
+   <button class="gift" onclick="unwrap(this)"><span class="emoji">🎀</span><span class="reveal">Unlimited hugs, endless laughter and people who make you feel loved. 💞</span></button>
+   <button class="gift" onclick="unwrap(this)"><span class="emoji">💌</span><span class="reveal">A reminder that you deserve every bit of love and happiness coming your way. 💗</span></button>
+  </div>
+  <button class="btn" id="giftNext" onclick="next(4)" disabled style="opacity:.45">All gifts opened? Continue →</button>
+ </section>
+ <section class="stage" id="s4">
+  <div class="stage-number">Surprise 04 · Make a wish</div><h2>One wish, just for you</h2>
+  <div class="cake">🎂</div>
+  <p>Close your eyes, make your biggest wish, then tap the button to blow out your candles.</p>
+  <button class="btn" onclick="blow()">Blow the candles ✨</button>
+
+  <!-- Birthday song: Add your own audio file path -->
+<audio id="birthdayAudio" preload="auto">
+    <source src="birthday.mp3" type="audio/mpeg">
+</audio>
+
+
+  <p id="wish" style="min-height:30px;color:#ffcada;font-family:'Playfair Display',serif;font-style:italic"></p>
+  <button class="btn" id="finalNext" onclick="next(5)" style="display:none">One last thing… ♡</button>
+ </section>
+ <section class="stage" id="s5">
+  <div class="stage-number">The final surprise · Just for Isha</div><div class="cake">💖</div>
+  <h2>May your world always sparkle</h2>
+  <div class="final-note">“You deserve a life that feels as lovely as the happiness you bring to others.”</div>
+  <p>Happy Birthday, Isha. May this be your most beautiful chapter yet. 🌷</p>
+  <button class="btn" onclick="restartExperience()">Celebrate again! 🎉</button>
+ </section>
+ <div class="footer">A little corner of the internet, made especially for Isha ♡</div>
+</main>
+<script>
+let current=1,opened=0;
+function begin(){document.getElementById('experience').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});petals(18)}
+function next(n){document.getElementById('s'+current).classList.remove('active');current=n;document.getElementById('s'+n).classList.add('active');document.getElementById('progress').style.width=(n-1)*25+'%';document.getElementById('experience').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});petals(10);if(n===5)celebrate()}
+function unwrap(el){if(el.classList.contains('open'))return;el.classList.add('open');opened++;if(opened===3){let b=document.getElementById('giftNext');b.disabled=false;b.style.opacity='1';}}
+let birthdaySongPlayed=false;
+async function playBirthdaySong(){
+  if(birthdaySongPlayed)return;
+  birthdaySongPlayed=true;
+  const AudioContextClass=window.AudioContext||window.webkitAudioContext;
+  if(!AudioContextClass)return;
+  let audio;
+  try{
+    audio=new AudioContextClass();
+    if(audio.state==='suspended')await audio.resume();
+    // A short, original celebratory melody. Starts only after the candle button is tapped.
+    const notes=[
+      [523.25,0],[659.25,.22],[783.99,.44],[659.25,.68],
+      [698.46,.92],[783.99,1.14],[880,1.38],[783.99,1.62],
+      [659.25,1.88],[587.33,2.12],[523.25,2.36],[587.33,2.62],
+      [659.25,2.9],[783.99,3.18],[1046.5,3.48]
+    ];
+    const master=audio.createGain();
+    master.gain.setValueAtTime(.0001,audio.currentTime);
+    master.gain.exponentialRampToValueAtTime(.16,audio.currentTime+.04);
+    master.gain.setValueAtTime(.16,audio.currentTime+3.7);
+    master.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+4.25);
+    master.connect(audio.destination);
+    notes.forEach(([frequency,offset])=>{
+      const osc=audio.createOscillator(),gain=audio.createGain();
+      osc.type='sine';
+      osc.frequency.value=frequency;
+      gain.gain.setValueAtTime(.0001,audio.currentTime+offset);
+      gain.gain.exponentialRampToValueAtTime(.8,audio.currentTime+offset+.025);
+      gain.gain.exponentialRampToValueAtTime(.0001,audio.currentTime+offset+.2);
+      osc.connect(gain);gain.connect(master);
+      osc.start(audio.currentTime+offset);
+      osc.stop(audio.currentTime+offset+.22);
+    });
+    window.setTimeout(()=>audio.close().catch(()=>{}),5000);
+  }catch(error){
+    birthdaySongPlayed=false;
+    if(audio)audio.close().catch(()=>{});
+  }
+}
+function blow(){
+
+    // Blow candles
+    document.querySelector('#s4 .cake').textContent = '✨🎂✨';
+
+    // Show birthday wish
+    document.getElementById('wish').textContent =
+        'Wish sent to the universe! May it come true. 🌟';
+
+    // Play birthday song without displaying controls
+    const birthdayAudio = document.getElementById('birthdayAudio');
+
+    birthdayAudio.currentTime = 0;
+    birthdayAudio.play().catch(error => {
+        console.log("Audio playback failed:", error);
+    });
+
+    // Show next button
+    document.getElementById('finalNext').style.display = 'inline-block';
+
+    // Celebration
+    confetti(110);
+}
+function petals(n){for(let i=0;i<n;i++){let p=document.createElement('div');p.className='petal';p.textContent=['🌸','💗','✿','♡'][Math.floor(Math.random()*4)];p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*17)+'px';p.style.animationDuration=(5+Math.random()*6)+'s';p.style.setProperty('--drift',(Math.random()*180-90)+'px');document.body.appendChild(p);setTimeout(()=>p.remove(),12000)}}
+function confetti(n){for(let i=0;i<n;i++){let c=document.createElement('i');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=['#ff8fb7','#f8d9a0','#fff1f5','#c5a5ff','#ffcf8c'][i%5];c.style.animationDelay=Math.random()*1.2+'s';c.style.animationDuration=(2.4+Math.random()*2)+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),5500)}}
+function celebrate(){confetti(130);petals(20)}
+
+function restartExperience(){
+// Stop birthday song and reset it
+const birthdayAudio = document.getElementById('birthdayAudio');
+
+birthdayAudio.pause();
+birthdayAudio.currentTime = 0;
+
+  // Restore the birthday journey to its original opening state.
+  document.querySelectorAll('.stage').forEach(stage=>stage.classList.remove('active'));
+  document.getElementById('s1').classList.add('active');
+  current=1;
+  opened=0;
+  document.querySelectorAll('.gift').forEach(gift=>gift.classList.remove('open'));
+  const giftNext=document.getElementById('giftNext');
+  giftNext.disabled=true;
+  giftNext.style.opacity='.45';
+  document.getElementById('progress').style.width='0%';
+  document.getElementById('wish').textContent='';
+  document.getElementById('finalNext').style.display='none';
+  document.querySelector('#s4 .cake').textContent='🎂';
+  birthdaySongPlayed=false;
+  window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  petals(18);
+}
+
+setInterval(()=>{if(Math.random()>.35)petals(1)},1700);
+</script>
+</body>
+</html>
